@@ -13,7 +13,7 @@ var io = require('socket.io').listen(server, {'log level': 0});
 require('deployd').attach(server, {
     socketIo: io,
     env: ENV,
-    db: {host:'localhost', port:27017, name:'test-app'}
+    db: {host:'ds135852.mlab.com', port:35852, name:'deployd'}
 });
 app.use(server.handleRequest);
 
